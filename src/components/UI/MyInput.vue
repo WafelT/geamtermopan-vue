@@ -7,7 +7,7 @@
     >
         <input 
             v-if="!phone"
-            autocomplete="off" type="tel" 
+            autocomplete="off" type="text" 
             :placeholder="placeholder" 
             @input="updateInput" 
             :value="modelValue"

@@ -74,7 +74,7 @@
       }
     },
     computed: { ...mapGetters(['getIsMobileMenuOpen', 'getIsCallMenuOpen', 'getLinks']) },
-    async mounted() {
+    mounted() {
       this.fetchLinks();
     },
     methods: {

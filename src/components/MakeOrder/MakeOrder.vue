@@ -53,7 +53,7 @@ export default {
         }
     },
     methods: {
-        async onSubmit() {
+        onSubmit() {
             this.form.getSubmited = true;
             this.v$.form.$touch()
             if (this.v$.$invalid) {

@@ -11,13 +11,12 @@
 </template>
 
 <script>
-import { mapActions, mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 import './CallMenu.scss'
 
 export default {
     name: 'CallMenu',
     methods: {
-        ...mapActions(['hasCallMenuOpenedAction']),
         ...mapMutations(['hasCallMenuOpenedMutation']),
         toggleCallMenu(flag) {
             this.hasCallMenuOpenedMutation(flag)

@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { mapActions, mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 import './Header.scss'
 
 export default {
@@ -48,7 +48,6 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['hasMobileMenuOpenedAction', 'hasCallMenuOpenedAction']),
         ...mapMutations(['hasMobileMenuOpenedMutation', 'hasCallMenuOpenedMutation']),
         toggleMobileMenu(flag) {
             this.hasMobileMenuOpenedMutation(flag)

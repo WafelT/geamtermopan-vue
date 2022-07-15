@@ -2,10 +2,10 @@ import linksData from "@/data/links";
 
 export default {
     actions: {
-        async fetchLinks(ctx) {
+        fetchLinks(ctx) {
             ctx.commit('updateLinks', linksData);
         },
-        async changeActiveLinksAction(ctx, linkId) {
+        changeActiveLinksAction(ctx, linkId) {
             ctx.commit('changeActiveLinksMutation', linkId);
         },
     },

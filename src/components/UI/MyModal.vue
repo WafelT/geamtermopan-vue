@@ -1,5 +1,5 @@
 <template>
-    <div class="modal" @click="closeModal" @closeModal="closeModal">
+    <div class="modal" @click="closeModal">
         <div @click.stop class="modal__container">
             <header>
                 <h4>{{ title }}</h4>
